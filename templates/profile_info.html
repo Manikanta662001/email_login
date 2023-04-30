@@ -1,0 +1,18 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+
+     <title>profile_info page</title>
+{% endblock %}
+
+{% block body_block %}
+
+       <h1>Users name is {{USD.username}}</h1>
+       <h1>Users email is {{USD.email}}</h1>
+       <h1>Users addreess is {{PFD.address}}</h1>
+       <h1>Users profile_pic is</h1>
+       <h1>Users profile_pic address is {{PFD.profile_pic.url}}</h1>
+       <img src="{{PFD.profile_pic.url}}" alt="">
+
+    {% endblock %}
